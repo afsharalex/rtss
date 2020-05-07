@@ -1,4 +1,17 @@
 #+TITLE: Real Time Stock Simulator
+#+DATE: May 7, 2020
+#+SINCE: 0.1.0
+#+STARTUP: inlineimages nofold
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+  - [[#maintainers][Maintainers]]
+- [[#prerequisites][Prerequisites]]
+- [[#features][Features]]
+- [[#configuration][Configuration]]
+- [[#troubleshooting][Troubleshooting]]
+- [[#to-do-28][To Do]]
+- [[#license][License]]
 
 * Description
 
@@ -30,6 +43,40 @@ those backlogs. I'll cross that bridge when I get there.
 I will accept PRs if they are in line with what I want the application to do.
 Feel free to reach out if you have any ideas, or if something is not idiomatic
 (Rust is a relatively new language for me!).
+
+** Maintainers
++ [[github:afsharalex][@afsharalex]] (Author)
+
+* Prerequisites
+This depends on Postgres. This can be changed by changing the `features` line
+for the Diesel dependency, however be sure to ensure all SQL is compatible with
+your target database. I have only testing with postgreSQL - use at your own risk.
+
+* Features
+
++ Create Stock Symbols.
++ Generate past data for Stocks.
++ Populate data at interval specified with data for all stocks created.
++ Fill in any gaps if/when configuration is changed.
++ On startup, ensure no gaps exist in stock data.
++ Concurrently generate data.
+
+* Configuration
+To get started, install the diesel-cli, create the database, and run the migrations. Copy the
+`env.example` as `.env` and set the `DATABASE_URL`.
+
+* Troubleshooting
+(empty)
+
+* To Do [2/8]
+- [X] Add dependency for database
+- [X] Add dependency for config files
+- [ ] Connect to database
+- [ ] Read config file
+- [ ] Ability to create Stock symbols
+- [ ] Detect gaps in data
+- [ ] Detect difference in config and existing data
+- [ ] Concurrently generate data
 
 * License
 
