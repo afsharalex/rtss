@@ -17,4 +17,40 @@ missing data until the current datetime. Those are my needs at the moment, they
 may change later.
 
 I am creating this as a library as I am not sure if I will ultimately use it via
-a web interface later, or continue to use it as a CLI/TUI application.
+a web interface, or continue to use it as a CLI/TUI application.
+
+I will only be testing with postgreSQL, unless my needs change in the future.
+
+Due to the resource heavy nature of creating quotes for possibly hundreds of stock symbols for
+an arbitrary period of time (possibly with a frequency of 1 minute), I have
+chosen to use Rust for this project - and because I like using it :). I will
+eventually make this application concurrent, to reduce the time needed to create
+those backlogs. I'll cross that bridge when I get there.
+
+I will accept PRs if they are in line with what I want the application to do.
+Feel free to reach out if you have any ideas, or if something is not idiomatic
+(Rust is a relatively new language for me!).
+
+* License
+
+MIT License
+
+Copyright (c) 2020 Alex Afshar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
