@@ -1,0 +1,20 @@
+#+TITLE: Real Time Stock Simulator
+
+* Description
+
+The `Real Time Stock Simulator` is a tool to help test and develop another tool
+I am working on. I wanted something that would reliably create fake stock market
+data to test the other (nameless) tool I am working on. For now, my needs are
+fairly basic. I need it to create a 'log' for every interval (1 minute, 5
+minutes, 15 minutes) for possibly hundreds of fake stocks and log the quotes to
+a database. I also need it to create backlogs of data; for example, if you want
+to generate data for two months prior it will generate the data for the
+specified intervals. In addition to backlogging data on command, as I will not
+have this tool running on a server 24/7 when I am doing local testing I need it
+to fill any gaps in data. If I start the application and don't use it for a
+month I need it to detect the missing data in the database and generate all the
+missing data until the current datetime. Those are my needs at the moment, they
+may change later.
+
+I am creating this as a library as I am not sure if I will ultimately use it via
+a web interface later, or continue to use it as a CLI/TUI application.
