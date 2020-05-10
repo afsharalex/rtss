@@ -70,7 +70,8 @@ To get started, install the diesel-cli, create the database, and run the migrati
 
 * To Do [2/8]
 - [X] Add dependency for database
-- [X] Add dependency for config files
+- [X] Add dependency for env files
+- [ ] Read env file
 - [ ] Connect to database
 - [ ] Read config file
 - [ ] Ability to create Stock symbols
