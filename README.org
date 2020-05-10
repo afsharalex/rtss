@@ -11,7 +11,7 @@
 - [[#configuration][Configuration]]
 - [[#getting-started][Getting Started]]
 - [[#troubleshooting][Troubleshooting]]
-- [[#to-do-412][To Do]]
+- [[#to-do-411][To Do]]
 - [[#license][License]]
 
 * Description
@@ -72,7 +72,7 @@ You can install diesel's cli with `cargo install diesel_cli`. After it is instal
 * Troubleshooting
 (empty)
 
-* To Do [4/12]
+* To Do [4/11]
 - [X] Add dependency for database
 - [X] Add dependency for env files
 - [X] Read env file
@@ -82,7 +82,8 @@ You can install diesel's cli with `cargo install diesel_cli`. After it is instal
   - [X] Models
   - [X] Create Quote program
   - [X] Show Quotes program
-  - [ ] Delete Quote program
+  - [X] Delete Quote program
+  - [ ] Batch Create program
 - [ ] Stock
   - [ ] Migration files
   - [ ] Models
