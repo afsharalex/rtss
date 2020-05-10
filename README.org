@@ -11,7 +11,7 @@
 - [[#configuration][Configuration]]
 - [[#getting-started][Getting Started]]
 - [[#troubleshooting][Troubleshooting]]
-- [[#to-do-410][To Do]]
+- [[#to-do-412][To Do]]
 - [[#license][License]]
 
 * Description
@@ -67,12 +67,12 @@ To get started, install the diesel-cli, create the database, and run the migrati
 `env.example` as `.env` and set the `DATABASE_URL`.
 
 * Getting Started
-You can install diesel's cli with `cargo install diesel_cli`. After it is installed you can run `diesel setup` to create the database, then `diesel migration run` to run the migrations. I am including some utility programs to create, display, and delete data. Obviously you can simply use psql or pgadmin - use whichever you prefer. At the very least this will provide some documentation for how the data should be created/manipulated.
+You can install diesel's cli with `cargo install diesel_cli`. After it is installed you can run `diesel setup` to create the database, then `diesel migration run` to run the migrations. I am including some utility programs to create, display, and delete data. Obviously you can simply use psql or pgadmin - use whichever you prefer. At the very least this will provide some documentation for how the data should be created/manipulated. These utility apps can be run as follow `cargo run --bin <app_name>`, for example: `cargo run --bin create_quote` will run the create_quote.rs program. They are located in the `src/bin` directory.
 
 * Troubleshooting
 (empty)
 
-* To Do [4/10]
+* To Do [4/12]
 - [X] Add dependency for database
 - [X] Add dependency for env files
 - [X] Read env file
@@ -83,10 +83,16 @@ You can install diesel's cli with `cargo install diesel_cli`. After it is instal
   - [X] Create Quote program
   - [X] Show Quotes program
   - [ ] Delete Quote program
-- [ ] Read config file
-- [ ] Ability to create Stock symbols
+- [ ] Stock
+  - [ ] Migration files
+  - [ ] Models
+  - [ ] Create Stock program
+  - [ ] Show Stocks program
+  - [ ] Delete Stock program
+- [ ] Parse config file
+- [ ] Validate config file
 - [ ] Detect gaps in data
-- [ ] Detect difference in config and existing data
+- [ ] Detect difference in config and existing data (prompt user to generate first!)
 - [ ] Concurrently generate data
 
 * License
