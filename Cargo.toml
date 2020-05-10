@@ -5,5 +5,7 @@ authors = ["Alex Afshar <contact@alexafshar.com>"]
 edition = "2018"
 
 [dependencies]
-diesel = { version = "1.0.0", features = ["postgres"] }
+bigdecimal = "0.1.2"
+chrono = "0.4"
+diesel = { version = "1.0.0", features = ["postgres", "chrono", "bigdecimal", "numeric"] }
 dotenv = "0.9.0"
