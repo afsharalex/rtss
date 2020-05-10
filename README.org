@@ -9,8 +9,9 @@
 - [[#prerequisites][Prerequisites]]
 - [[#features][Features]]
 - [[#configuration][Configuration]]
+- [[#getting-started][Getting Started]]
 - [[#troubleshooting][Troubleshooting]]
-- [[#to-do-28][To Do]]
+- [[#to-do-410][To Do]]
 - [[#license][License]]
 
 * Description
@@ -65,14 +66,23 @@ your target database. I have only testing with postgreSQL - use at your own risk
 To get started, install the diesel-cli, create the database, and run the migrations. Copy the
 `env.example` as `.env` and set the `DATABASE_URL`.
 
+* Getting Started
+You can install diesel's cli with `cargo install diesel_cli`. After it is installed you can run `diesel setup` to create the database, then `diesel migration run` to run the migrations. I am including some utility programs to create, display, and delete data. Obviously you can simply use psql or pgadmin - use whichever you prefer. At the very least this will provide some documentation for how the data should be created/manipulated.
+
 * Troubleshooting
 (empty)
 
-* To Do [2/8]
+* To Do [4/10]
 - [X] Add dependency for database
 - [X] Add dependency for env files
-- [ ] Read env file
-- [ ] Connect to database
+- [X] Read env file
+- [X] Connect to database
+- [-] Quote
+  - [X] Migration files
+  - [X] Models
+  - [X] Create Quote program
+  - [X] Show Quotes program
+  - [ ] Delete Quote program
 - [ ] Read config file
 - [ ] Ability to create Stock symbols
 - [ ] Detect gaps in data
